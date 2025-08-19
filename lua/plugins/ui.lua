@@ -18,18 +18,18 @@ return {
     end,
   },
   -- lualine
-  {
-    "nvim-lualine/lualine.nvim",
-    opts = function()
-      require("lualine").setup({
-        options = {
-          theme = "tokyonight",
-          section_separators = { left = "", right = "" },
-          component_separators = { left = "", right = "" },
-        },
-      })
-    end,
-  },
+  -- {
+  --   "nvim-lualine/lualine.nvim",
+  --   opts = function()
+  --     require("lualine").setup({
+  --       options = {
+  --         theme = "tokyonight",
+  --         section_separators = { left = "", right = "" },
+  --         component_separators = { left = "", right = "" },
+  --       },
+  --     })
+  --   end,
+  -- },
   -- nvim-scrollbar
   {
     "petertriho/nvim-scrollbar",
@@ -57,5 +57,25 @@ return {
         },
       })
     end,
+  },
+  {
+    "folke/snacks.nvim",
+    opts = {
+      picker = {
+        hidden = true,
+        ignored = true,
+        sources = {
+          files = {
+            hidden = true,
+            ignored = true,
+          },
+          explorer = {
+            layout = {
+              preset = "default",
+            },
+          },
+        },
+      },
+    },
   },
 }
