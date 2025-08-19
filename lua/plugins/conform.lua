@@ -20,7 +20,9 @@ return {
         tf = { "terraform_fmt" },
         ["terraform-vars"] = { "terraform_fmt" },
         javascript = { "prettier" },
+        typescript = { "prettier" },
         sql = { "sqlfmt" },
+        vue = { "prettier" },
       }
     end,
   },
