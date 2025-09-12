@@ -5,8 +5,8 @@ return {
     opts = function()
       return {
         display = {
-          theme = "catppuccin",
-          flavor = "accent",
+          theme = "default",
+          --flavor = "accent",
         },
         text = {
           workspace = function(opts)
