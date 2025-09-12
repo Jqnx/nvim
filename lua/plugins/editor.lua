@@ -28,4 +28,11 @@ return {
       { "<leader>cgsj", "<cmd>GoTagAdd json<cr>", desc = "Go Add Json Tags" },
     },
   },
+  {
+    "eero-lehtinen/oklch-color-picker.nvim",
+    event = "VeryLazy",
+    version = "*",
+    keys = {},
+    opts = {},
+  },
 }
