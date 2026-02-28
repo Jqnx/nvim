@@ -1,0 +1,35 @@
+return {
+  "mason-org/mason-lspconfig.nvim",
+  opts = {
+    automatic_enable = false,
+    ensure_installed = {
+      -- GO
+      "goimports",
+      "gofumpt",
+      "gomodifytags",
+      "impl",
+      "golangci-lint",
+      "delve",
+      -- Vue
+      "vtsls",
+      "vue-ls",
+      "tailwindcss",
+      "eslint",
+      -- Lua
+      "stylua",
+      "lua_ls",
+      -- Python
+      "pyright",
+      "ruff",
+      "black",
+      -- SQL
+      "sqlfmt",
+      -- Docker
+      "hadolint",
+    },
+  },
+  dependencies = {
+    { "mason-org/mason.nvim", opts = {} },
+    "neovim/nvim-lspconfig",
+  },
+}
