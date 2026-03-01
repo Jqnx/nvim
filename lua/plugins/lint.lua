@@ -1,15 +1,26 @@
 return {
-  "mfussenegger/nvim-lint",
-  opts = {
-    -- Event to trigger linters
-    events = { "BufWritePost", "BufReadPost", "InsertLeave" },
-    linters_by_ft = {
-      go = { "golangcilint" },
-      python = { "ruff" },
-      terraform = { "terraform_validate" },
-      tf = { "terraform_validate" },
-      fish = { "fish" },
-      dockerfile = { "hadolint" },
-    },
-  },
+	-- 	"mfussenegger/nvim-lint",
+	-- 	event = "VeryLazy",
+	-- 	config = function()
+	-- 		local lint = require("lint")
+	-- 		-- Event to trigger linters
+	-- 		lint.linters_by_ft = {
+	-- 			go = { "golangcilint" },
+	-- 			python = { "ruff" },
+	-- 			terraform = { "terraform_validate" },
+	-- 			tf = { "terraform_validate" },
+	-- 			fish = { "fish" },
+	-- 			dockerfile = { "hadolint" },
+	-- 			markdown = { "vale" },
+	-- 		}
+	--
+	-- 		local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
+	--
+	-- 		vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
+	-- 			group = lint_augroup,
+	-- 			callback = function()
+	-- 				lint.try_lint()
+	-- 			end,
+	-- 		})
+	-- 	end,
 }
