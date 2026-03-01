@@ -1,5 +1,4 @@
 # NVim Dotfiles: NvChad Edition
----
 
 This setup uses kitty as terminal emulator (with [remote access](https://github.com/HyDE-Project/HyDE/discussions/484#discussioncomment-12891974) on).
 
