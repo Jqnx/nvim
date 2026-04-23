@@ -10,11 +10,14 @@ return {
 			"impl",
 			"golangci-lint",
 			"delve",
-			-- Vue
+			-- Typescript
 			"vtsls",
-			"vue-ls",
+			-- TailwindCSS
 			"tailwindcss",
+			-- Linting
 			"eslint",
+			-- Vue
+			"vue-ls",
 			-- Lua
 			"stylua",
 			"lua_ls",
@@ -28,6 +31,8 @@ return {
 			"hadolint",
 			-- Markdown
 			"vale",
+			-- Svelte
+			"svelte-language-server",
 		},
 	},
 	dependencies = {
