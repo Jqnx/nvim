@@ -38,7 +38,7 @@ M.ui = {
 }
 
 M.nvdash = {
-	load_on_startup = true,
+	load_on_startup = false,
 	buttons = {
 		{ txt = "  Find File", keys = "f", cmd = "Telescope find_files" },
 		{ txt = "  Recent Files", keys = "r", cmd = "Telescope oldfiles" },

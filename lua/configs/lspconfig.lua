@@ -57,23 +57,6 @@ vim.lsp.config("vtsls", {
 	filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "svelte" },
 })
 
-vim.lsp.config("gopls", {
-	settings = {
-		gopls = {
-			hints = {
-				assignVariableTypes = true,
-				compositeLiteralFields = true,
-				compositeLiteralTypes = true,
-				constantValues = true,
-				functionTypeParameters = true,
-				ignoredError = true,
-				parameterNames = true,
-				rangeVariableTypes = true,
-			},
-		},
-	},
-})
-
 vim.lsp.config("lua_ls", {
 	settings = {
 		Lua = {
@@ -86,6 +69,24 @@ vim.lsp.config("lua_ls", {
 				await = true, -- Await hints
 				semicolon = "All", -- Semicolon hints: "All" | "SameLine" | "Disable"
 			},
+		},
+	},
+})
+
+vim.lsp.config("gopls", {
+	settings = {
+		gopls = {
+			gofumpt = true,
+			hints = {
+				assignVariableTypes = true,
+				compositeLiteralFields = true,
+				compositeLiteralTypes = true,
+				constantValues = true,
+				functionTypeParameters = true,
+				parameterNames = true,
+				rangeVariableTypes = true,
+			},
+			usePlaceholders = true,
 		},
 	},
 })
